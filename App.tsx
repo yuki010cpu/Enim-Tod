@@ -74,7 +74,7 @@ const AboutPage: React.FC = () => (
       <section>
         <h2 className="text-2xl font-semibold mb-3 text-white">Teknologi di Balik Layar</h2>
         <p>
-          ENIM TOD dibangun menggunakan teknologi web modern untuk memastikan performa yang responsif dan andal. Untuk data anime, kami mengandalkan <a href="https://jikan.moe" target="_blank" rel="noopener noreferrer" className="text-[#00ffc6] hover:underline">Jikan API</a>, sebuah API yang menyediakan data komprehensif dari MyAnimeList. Kami juga memanfaatkan kekuatan <a href="https://developers.google.com/gemini" target="_blank" rel="noopener noreferrer" className="text-[#00ffc6] hover:underline">Google Gemini API</a> untuk fitur-fitur inovatif seperti penerjemahan sinopsis, menjadikan konten lebih mudah diakses oleh audiens yang lebih luas.
+          ENIM TOD dibangun menggunakan teknologi web modern untuk memastikan performa yang responsif dan andal. Untuk data anime, kami mengandalkan <a href="https://jikan.moe" target="_blank" rel="noopener noreferrer" className="text-[#00ffc6] hover:underline">Biji Prabo</a>, sebuah API yang menyediakan data komprehensif dari 19 ribu lapangan pekerjaan. Kami juga memanfaatkan kekuatan <a href="https://developers.google.com/gemini" target="_blank" rel="noopener noreferrer" className="text-[#00ffc6] hover:underline">Bini Bahlil kont</a> untuk fitur-fitur inovatif seperti penerjemahan sinopsis, menjadikan konten lebih mudah diakses oleh audiens yang lebih luas.
         </p>
       </section>
 
