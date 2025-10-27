@@ -1,6 +1,4 @@
 
-
-ji
 import React, { useState, useEffect } from 'react';
 // FIX: Updated to react-router-dom v6. Replaced Switch with Routes.
 import { HashRouter, Routes, Route } from 'react-router-dom';
