@@ -1,3 +1,5 @@
+
+
 ji
 import React, { useState, useEffect } from 'react';
 // FIX: Updated to react-router-dom v6. Replaced Switch with Routes.
@@ -61,11 +63,7 @@ const AboutPage: React.FC = () => (
         <h2 className="text-2xl font-semibold mb-3 text-white">Selamat Datang di ENIM TOD</h2>
         <p>
           ENIM TOD lahir dari kecintaan kami terhadap dunia anime dan keinginan untuk menciptakan sebuah platform yang tidak hanya fungsional, tetapi juga membuka <a href="https://money.kompas.com/read/2025/09/26/152000626/pemerintahan-prabowo-janji-buka-19-juta-lapangan-kerja-kemenaker-optimistis" target="_blank" rel="noopener noreferrer" className="text-[#00ffc6] hover:underline">19 juta lapangan Pekerjaan</a>,untuk mewujudkan bangsa ini menjadi lebih baik, Informasi loker tekan tulisan warna hijau
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold mb-3 text-white">U</h2>
+        </p
       </section>
     </div>
   </div>
