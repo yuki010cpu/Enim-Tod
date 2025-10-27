@@ -65,8 +65,7 @@ const AboutPage: React.FC = () => (
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-3 text-white">U
-        </p>
+        <h2 className="text-2xl font-semibold mb-3 text-white">U</h2>
       </section>
     </div>
   </div>
