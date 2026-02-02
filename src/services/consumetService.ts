@@ -1,4 +1,5 @@
 import type { Anime, AnimeDetails, PaginatedAnime, StreamData } from '../types';
+import * as animeIndoService from './animeIndoService';
 
 // Mengganti API yang tidak stabil dengan mirror publik yang lebih andal.
 const API_BASE_URL = 'https://api-consumet-org-sigma.vercel.app/anime';
@@ -75,4 +76,7 @@ export const getStreamForEpisode = async (episodeId: string): Promise<StreamData
         console.error(`Gagal mengambil stream dari AnimeFox untuk ID episode ${episodeId}:`, error);
         throw error;
     }
+      } catch (err) {
+    console.warn('Provider utama gagal, menggunakan anime-indo.lol (metadata only) sebagai fallback.', err);
+    return animeIndoService.getAnimeDetails(id);
 };
