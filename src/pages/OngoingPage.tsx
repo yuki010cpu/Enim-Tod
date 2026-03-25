@@ -1,23 +1,35 @@
 // OngoingPage.tsx
 
-import React from 'react';
-import { SankavollereiFallback } from 'sankavollerei';
+import React, { useEffect, useState } from 'react';
 
 const OngoingPage = () => {
+    const [anime, setAnime] = useState([]);
+
+    useEffect(() => {
+        fetch("https://www.sankavollerei.com/anime/")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                setAnime(data);
+            })
+            .catch(err => console.error(err));
+    }, []);
+
     return (
-        <SankavollereiFallback>
-            <div>
-                <h1>Ongoing Tasks</h1>
-                {/* Your ongoing tasks would go here */}
-            </div>
-        </SankavollereiFallback>
+        <div>
+            <h1>Anime Ongoing</h1>
+
+            {anime.length === 0 ? (
+                <p>Loading...</p>
+            ) : (
+                anime.map((item, index) => (
+                    <div key={index}>
+                        <p>{item.title || "No Title"}</p>
+                    </div>
+                ))
+            )}
+        </div>
     );
 };
 
 export default OngoingPage;
-
-// Improved Error Handling
-const handleError = (error) => {
-    console.error('An error occurred:', error);
-    // Implement further error handling logic here
-};
